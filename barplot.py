@@ -14,6 +14,7 @@ airline_data =  pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.
                                    'Div2Airport': str, 'Div2TailNum': str})
 # Create a dash application
 app = dash.Dash(__name__)
+server = app.server
                                
 app.layout = html.Div(children=[ 
                                     html.H1('Total number of flights to the destination state',
